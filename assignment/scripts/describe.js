@@ -26,10 +26,14 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
+// it firsts initializes the variable let name to value 'Dane'.
+// the if/else statement code checks if the value of name is equal to 'Mary'.
+// Since name is not, the condition name === 'Mary' evaluates to false. 
+// The code inside the else block executes.
+// It logs 'How do you do?' to the console.
 // 
-// 
-// 
-//
+
+
 
 //CODE
 /*
@@ -45,10 +49,18 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// The code initializes a variable 'secret' without assigning a value.
+// Another variable 'code' is paired with the value 123. 
+// checks if 'code' is equal to 123. 
+//The condition is true, so it assigns the value 'super' to 'secret' and doubles the value of 'code'.
+//it then checks if 'code' is greater than 250. If true, it reassigns the value of 'secret' to 'duper'.
+//  Console.log's value of secret will be 'super' because 246 > 250
+
+
+
+
+
+
 
 //CODE
 /*
@@ -70,10 +82,16 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// The code initializes three variables: 'isStudent' is set to true, 'age' is set to 34, and 'zip' is set to 55407. 
+//it checks conditions :
+// If 'isStudent' is true and 'zip' is greater than 80000, it logs "You're a student on the West Coast!".
+// Otherwise, if 'isStudent' is false or 'age' is less than 30, it logs "What are your hobbies?".
+// Otherwise it will continue to the next condition, if 'isStudent' is true, it logs "Welcome to Prime!".
+// If none of the above conditions are met, it logs "How about the weather?" as the final else statment
+
+// Console.log's value at the end: "Welcome to Prime!" because let isStudent = true;
+
+
 
 //CODE
 /*
@@ -136,6 +154,10 @@ let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+  //FIX - colorTwo = 'purple'; 
+  // only 'colorOne' is being set to 'purple', leaving out colorTwo all together. 
+  // this code needs to include colorTwo as changed to purple indicated by FIX above
+  // this FIX will make mix accurate for both color variables 
 }
 */
 
@@ -148,6 +170,8 @@ let temp = 40;
 const time = 4;
 
 if (temp > 39 || time >= 4) {
+  // FIX: Replace || with &&. 
+  //the insructions indicate to check if temp is higher than 39 AND if time is greater or equal to 4... not "or"
   console.log('throw away the food!');
 }
 */
@@ -161,6 +185,9 @@ let age = 21;
 const minAge = 21;
 
 if(minAge <= age) {
+  //tychnically this code should still run just fine without error
+  //the human readibility is confusing so it is cleaner code to switch the condition in the code to
+  //FIX - check if age is greater than or equal to minAge -- if (age >= minAge)
   console.log('no entry');
 } else {
   console.log('enter');
